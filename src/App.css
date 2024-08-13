@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "jost";
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  height: auto;
+}
+.main {
+  background-image: linear-gradient(rgb(246, 246, 246), rgb(186, 218, 230));
+  height: 800px;
+}
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 100px;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px;
+}
+
+.group {
+  margin: 5px;
+  height: 80px;
+  width: 400px;
+}
+
+.input {
+  width: 370px;
+}
+
+.bottom {
+  margin-top: 105px;
+}
+
+.right {
+  margin-left: 30px;
+}
+
+button {
+  width: 80px;
+  margin-left: 585px;
+  background-color: rgb(36, 36, 119);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input,
+select {
+  width: 200px;
+  border: 2px solid #bbbbbb;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #767676;
+  text-align: center;
+}
+
+.register {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 20px auto;
+}
+.register > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.register > div .name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #767676;
+}
+.register .first .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #5826ae;
+  border-radius: 50%;
+}
+.register .first .name {
+  color: #5826ae;
+}
+
+.register .second .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #767676;
+  border-radius: 50%;
+}
+
+.register .third .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #767676;
+  border-radius: 50%;
+}
+
+.register .second {
+  position: relative;
+}
+.register .second::before {
+  position: absolute;
+  left: -130px;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #bbbbbb;
+}
+.register .second::after {
+  position: absolute;
+  right: -130px;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #bbbbbb;
+}
